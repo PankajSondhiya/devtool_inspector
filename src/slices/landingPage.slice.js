@@ -10,6 +10,7 @@ const LandingPageSlice = createSlice({
     hoveredRect: null,
     demoMode: false,
     locked: false,
+    stylesApplied: null,
   },
   reducers: {
     setPosition(state, { payload }) {
@@ -25,9 +26,17 @@ const LandingPageSlice = createSlice({
     setLocked: (state, action) => {
       state.locked = action.payload.value ?? !state.locked;
     },
+    setStylesApplied: (state, { payload }) => {
+      state.stylesApplied = payload;
+    },
   },
 });
 
-export const { setPosition, setHoveredRect, setDemoMode, setLocked } =
-  LandingPageSlice.actions;
+export const {
+  setPosition,
+  setHoveredRect,
+  setDemoMode,
+  setLocked,
+  setStylesApplied,
+} = LandingPageSlice.actions;
 export default LandingPageSlice.reducer;

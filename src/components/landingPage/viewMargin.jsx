@@ -47,7 +47,7 @@ export const MarginLeft = () => {
         height: hoveredRect.height,
       }}
     >
-      <div className="text-bold absolute origin-center -rotate-90 rounded-xl bg-black/50 px-1 text-[12px] text-orange-500">
+      <div className="text-bold absolute origin-center rounded-xl bg-black/50 px-1 text-[12px] text-orange-500">
         ml-{hoveredRect?.spacing.marginLeft}
       </div>
     </div>
@@ -65,7 +65,7 @@ export const MarginRight = () => {
         height: hoveredRect.height,
       }}
     >
-      <div className="text-bold absolute origin-center rotate-90 rounded-xl bg-black/50 px-1 text-[12px] text-orange-500">
+      <div className="text-bold absolute origin-center rounded-xl bg-black/50 px-1 text-[12px] text-orange-500">
         mr-{hoveredRect?.spacing.marginRight}
       </div>
     </div>
